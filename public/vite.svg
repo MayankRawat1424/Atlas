@@ -1,0 +1,60 @@
+<svg
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Outer Circle -->
+  <circle
+    cx="128"
+    cy="128"
+    r="92"
+    stroke="black"
+    stroke-width="8"
+  />
+
+  <!-- Vertical Meridian -->
+  <line
+    x1="128"
+    y1="36"
+    x2="128"
+    y2="220"
+    stroke="black"
+    stroke-width="6"
+  />
+
+  <!-- Horizontal Latitude -->
+  <line
+    x1="36"
+    y1="128"
+    x2="220"
+    y2="128"
+    stroke="black"
+    stroke-width="6"
+  />
+
+  <!-- Inner Arc (Top) -->
+  <path
+    d="M64 128a64 64 0 0 1 128 0"
+    stroke="black"
+    stroke-width="5"
+    fill="none"
+  />
+
+  <!-- Inner Arc (Bottom) -->
+  <path
+    d="M64 128a64 64 0 0 0 128 0"
+    stroke="black"
+    stroke-width="5"
+    fill="none"
+  />
+
+  <!-- Center Point -->
+  <circle
+    cx="128"
+    cy="128"
+    r="6"
+    fill="black"
+  />
+</svg>
