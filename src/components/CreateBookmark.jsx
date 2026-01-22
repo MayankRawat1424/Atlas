@@ -1,8 +1,8 @@
 import { useState } from "react";
-import useBookmarks from "./useBookmarks";
+// import { useBookmarksContext } from "./context/BookmarksContext";
 
 const CreateBookmark = ({ setOpenForm }) => {
-  const { addBookmark } = useBookmarks();
+  // const { addBookmark } = useBookmarksContext();
   const [url, setUrl] = useState("");
   const [tags, setTags] = useState("");
   const [desc, setDesc] = useState("");
@@ -13,16 +13,16 @@ const CreateBookmark = ({ setOpenForm }) => {
 
     if (!url.trim()) return;
 
-    addBookmark({
-      title: site.trim(),
-      url: url.trim(),
-      tags: tags
-        .split(",")
-        .map((t) => t.trim().toLowerCase())
-        .filter(Boolean),
-      description: desc.trim(),
-    });
-    console.log("BookMark Created");
+    // addBookmark({
+    //   title: site.trim(),
+    //   url: url.trim(),
+    //   tags: tags
+    //     .split(",")
+    //     .map((t) => t.trim().toLowerCase())
+    //     .filter(Boolean),
+    //   description: desc.trim(),
+    // });
+    // console.log("BookMark Created");
 
     setSite("");
     setUrl("");
