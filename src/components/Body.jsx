@@ -1,5 +1,5 @@
 const Body = () => {
-  // const { bookmarks } = useBookmarksContext();
+  const { bookmarks } = useBookmarksContext();
 
   if (bookmarks.length === 0) {
     return <p>No Bookmarks Found</p>;
